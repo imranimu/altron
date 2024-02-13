@@ -2899,12 +2899,12 @@ h2.accordion-title {
     background: #00FBF4;
 }
 
- .top-wrap .go-top-button i {
+.top-wrap .go-top-button i {
       font-size: 20px;
       font-weight: 700;
       padding-left: 4px;
       color: #000;
- }
+}
 .top-wrap .go-top-button:hover i{
     color: #fff;
 }
