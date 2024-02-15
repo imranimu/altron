@@ -21,6 +21,8 @@
 	<!-- <link rel="stylesheet" href="assets/css/all.min.css" type="text/css" media="all" />		 -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 	<!-- theme-default CSS -->
 	<link rel="stylesheet" href="assets/css/theme-default.css" type="text/css" media="all" />	
 	<!-- meanmenu CSS -->
@@ -118,26 +120,41 @@
 	<div class="container">
 		<div class="row hero-bg align-items-center">
 			<div class="col-lg-12 col-md-12">
-				<!-- hero content -->
-				<div class="hero-content">
-					<h1>Creating a Better<span></span></h1>
-					<h1>Cloud Solutions</h1> 
-				</div>
-				<!-- hero description -->
-				<div class="hero-description">
-					<p>Payment solution magnetic value Intrinsicly to enterprise-wide without cross functional information.</p>
-				</div>
+				<div class="owl-carousel owl-theme">
+					<div class="item active">
+						<!-- hero content -->
+						<div class="hero-content">
+							<h1>Creating a Better<span></span></h1>
+							<h1>Cloud Solutions</h1> 
+						</div>
+						<!-- hero description -->
+						<div class="hero-description">
+							<p>Payment solution magnetic value Intrinsicly to enterprise-wide without cross functional information.</p>
+						</div>
 
-				<!-- widget search -->
-				<div class="widget_search">
-					<!-- <form action="#" method="get">
-						<input type="text" name="s" value="" placeholder="Search Here" title="Search for:">
-						<span class="hero-button"><a href="#"> Start Free Trial </a></span>
-					</form> --> 
-					
-					<span class="hero-button"> <a href="contact.html">Get Started</a></span>
-				</div>
+						<!-- widget search -->
+						<div class="widget_search">  
+							<span class="hero-button"> <a href="services.html#Cloud">Get Started</a></span>
+						</div>
+					</div>
 
+					<div class="item">
+						<!-- hero content -->
+						<div class="hero-content">
+							<h1>Creating a Better<span></span></h1>
+							<h1>Modern Workplace and Security</h1> 
+						</div>
+						<!-- hero description -->
+						<div class="hero-description">
+							<p>Payment solution magnetic value Intrinsicly to enterprise-wide without cross functional information.</p>
+						</div>
+
+						<!-- widget search -->
+						<div class="widget_search">  
+							<span class="hero-button"> <a href="services.html#Workplace">Get Started</a></span>
+						</div>
+					</div>
+				</div> 
 			</div>
 			<!-- <div class="col-lg-5 col-md-12">
 				<div class="hero-right-thumb">
@@ -830,5 +847,20 @@
 	<script src="assets/js/theme.js"></script>
 	<script src="assets/js/jquery.barfiller.js"></script>
 	<!-- jquery js -->		
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<script>
+		$(document).ready(function(){
+			$('.owl-carousel').owlCarousel({
+				loop:true, 
+				items:1, 
+    			animateIn: 'slideInLeft',
+				animateOut: 'slideInLeft',
+				autoplay:true, 
+				autoplayHoverPause:false,
+			})
+		})
+	</script>
 </body>
 </html>
