@@ -58,7 +58,7 @@ img{
     position: relative;
     background: transparent;
     margin-bottom: -99px;
-    /* background-color: rgba(0,0,0,0.3); */
+    background-color: rgba(0,0,0,0.3);
 }
 
 .sticky-nav {
@@ -1215,7 +1215,7 @@ ul.footer-menu li a:hover {
     background-position: center;
     height: 360px;
     padding-top: 75px;
-    filter: grayscale(0.6);
+    /* filter: grayscale(0.6); */
 }
 
 /*breatcam title*/
@@ -1625,6 +1625,7 @@ ul.footer-menu li a:hover {
 
 .blogs-section {
     padding: 50px 0;
+    background-color: #01090A;
 }
 
 .blog-single-box2.upp {
@@ -1634,20 +1635,23 @@ ul.footer-menu li a:hover {
 /*blog single box*/
 
 .blog-single-box2 {
-    padding: 30px 30px 0 0;
+    padding: 0px 0px 0 0;
+    margin-bottom: 25px;
 }
 
 /*blog thumb*/
 
 .blog-thumb2 a img {
     width: 100%;
+    min-height: 216px;
+    object-fit: cover;
 }
 
 /*blog title*/
 
 .blog-title2 h3 a {
-    font-size: 35px;
-    color: #00295a;
+    font-size: 25px;
+    color: #fff;
     font-weight: 600;
     display: inline-block;
     padding: 0 0 18px;
@@ -1657,10 +1661,14 @@ ul.footer-menu li a:hover {
     color: #00FBF4;
 }
 
+.blog-text2 p{
+    font-size: 13px;
+}
+
 /*blog text*/
 
 .blog-text2 {
-    padding: 0 0 20px;
+    padding: 0 0 0px;
 }
 
 span.blog-rt {
@@ -1675,12 +1683,14 @@ span.blog-rt {
 /*blog description*/
 
 .blog-description p {
-    padding: 35px 0 0;
+    padding: 15px 0 0;
+    text-align: justify;
 }
 
 .blog-description {
-    background: #f7f7fe;
-    padding: 0 35px 20px;
+    background: #1b1b26;
+    color: #fff;
+    padding: 0 25px 10px;
 }
 
 /*blog right*/
@@ -3071,4 +3081,16 @@ h2.accordion-title {
 .serviceWrap ul{
     list-style: square inside;
     color: #fff;
+}
+
+body .slick-next{
+    right: -50px;
+}
+
+body .slick-prev{
+    left: -50px;
+}
+
+body .slick-next::before, body .slick-prev::before{
+    font-size: 30px;
 }
